@@ -1,0 +1,313 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Modern Archive Website
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-gray-50 text-gray-800 min-h-screen flex flex-col">
+  <header class="bg-white shadow-md sticky top-0 z-50">
+   <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+    <a class="text-2xl font-bold text-indigo-600 flex items-center space-x-2" href="#">
+     <img alt="Archive logo, stylized letter A in blue and white" class="w-10 h-10" height="40" src="https://storage.googleapis.com/a1aa/image/e14e1728-e382-43e1-1bd4-6a1fef339800.jpg" width="40"/>
+     <span>
+      Modern Archive
+     </span>
+    </a>
+    <nav>
+     <ul class="hidden md:flex space-x-8 font-semibold text-gray-700">
+      <li>
+       <a class="hover:text-indigo-600 transition" href="#">
+        Home
+       </a>
+      </li>
+      <li>
+       <a class="hover:text-indigo-600 transition" href="#">
+        Archives
+       </a>
+      </li>
+      <li>
+       <a class="hover:text-indigo-600 transition" href="#">
+        Categories
+       </a>
+      </li>
+      <li>
+       <a class="hover:text-indigo-600 transition" href="#">
+        About
+       </a>
+      </li>
+      <li>
+       <a class="hover:text-indigo-600 transition" href="#">
+        Contact
+       </a>
+      </li>
+     </ul>
+     <button aria-label="Toggle menu" class="md:hidden text-gray-700 focus:outline-none" id="menu-btn">
+      <i class="fas fa-bars fa-lg">
+      </i>
+     </button>
+    </nav>
+   </div>
+   <div class="hidden md:hidden bg-white shadow-md" id="mobile-menu">
+    <ul class="flex flex-col space-y-2 px-6 py-4 font-semibold text-gray-700">
+     <li>
+      <a class="block hover:text-indigo-600 transition" href="#">
+       Home
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-indigo-600 transition" href="#">
+       Archives
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-indigo-600 transition" href="#">
+       Categories
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-indigo-600 transition" href="#">
+       About
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-indigo-600 transition" href="#">
+       Contact
+      </a>
+     </li>
+    </ul>
+   </div>
+  </header>
+  <main class="flex-grow container mx-auto px-6 py-10">
+   <section class="mb-16">
+    <div class="text-center max-w-3xl mx-auto">
+     <h1 class="text-4xl md:text-5xl font-extrabold text-indigo-600 mb-4">
+      Welcome to the Modern Archive
+     </h1>
+     <p class="text-lg text-gray-600">
+      Explore a curated collection of historical documents, images, and multimedia resources, all organized for easy access and discovery.
+     </p>
+    </div>
+   </section>
+   <section class="mb-16">
+    <h2 class="text-3xl font-semibold text-gray-800 mb-8 border-b-2 border-indigo-600 inline-block pb-2">
+     Latest Archives
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+     <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+      <img alt="Old historical document with handwritten text and stamps" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/2724160e-b954-4b17-280e-76e0e2382694.jpg" width="600"/>
+      <div class="p-6">
+       <h3 class="text-xl font-semibold mb-2 text-indigo-700 hover:underline cursor-pointer">
+        Declaration of Independence Manuscript
+       </h3>
+       <p class="text-gray-600 mb-4">
+        A scanned original manuscript of the Declaration of Independence from 1776.
+       </p>
+       <a class="text-indigo-600 font-semibold hover:underline flex items-center space-x-1" href="#">
+        <span>
+         Read More
+        </span>
+        <i class="fas fa-arrow-right">
+        </i>
+       </a>
+      </div>
+     </article>
+     <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+      <img alt="Black and white vintage photo of a city street in the 1920s" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/a76d2c2f-89b1-4344-cf1c-50c2839a998f.jpg" width="600"/>
+      <div class="p-6">
+       <h3 class="text-xl font-semibold mb-2 text-indigo-700 hover:underline cursor-pointer">
+        1920s City Street Photography
+       </h3>
+       <p class="text-gray-600 mb-4">
+        A collection of black and white photographs capturing urban life in the 1920s.
+       </p>
+       <a class="text-indigo-600 font-semibold hover:underline flex items-center space-x-1" href="#">
+        <span>
+         Read More
+        </span>
+        <i class="fas fa-arrow-right">
+        </i>
+       </a>
+      </div>
+     </article>
+     <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+      <img alt="Ancient map showing old trade routes and geographical features" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/5ddc06b8-64d6-4c9a-4fc9-69e1758090b4.jpg" width="600"/>
+      <div class="p-6">
+       <h3 class="text-xl font-semibold mb-2 text-indigo-700 hover:underline cursor-pointer">
+        Ancient Trade Routes Map
+       </h3>
+       <p class="text-gray-600 mb-4">
+        Digitized maps illustrating ancient trade routes across continents.
+       </p>
+       <a class="text-indigo-600 font-semibold hover:underline flex items-center space-x-1" href="#">
+        <span>
+         Read More
+        </span>
+        <i class="fas fa-arrow-right">
+        </i>
+       </a>
+      </div>
+     </article>
+     <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+      <img alt="Yellowed old newspaper front page with headlines and images" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/0ee8f834-4deb-4072-8883-ad1d09408b06.jpg" width="600"/>
+      <div class="p-6">
+       <h3 class="text-xl font-semibold mb-2 text-indigo-700 hover:underline cursor-pointer">
+        1940s Newspaper Front Pages
+       </h3>
+       <p class="text-gray-600 mb-4">
+        A curated archive of front pages from newspapers during the 1940s.
+       </p>
+       <a class="text-indigo-600 font-semibold hover:underline flex items-center space-x-1" href="#">
+        <span>
+         Read More
+        </span>
+        <i class="fas fa-arrow-right">
+        </i>
+       </a>
+      </div>
+     </article>
+     <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+      <img alt="Vintage film reels stacked on a wooden table with light reflections" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/65ddeff4-5b04-43f3-2f6a-342943c55d0c.jpg" width="600"/>
+      <div class="p-6">
+       <h3 class="text-xl font-semibold mb-2 text-indigo-700 hover:underline cursor-pointer">
+        Vintage Film Reels Collection
+       </h3>
+       <p class="text-gray-600 mb-4">
+        Digitized vintage film reels from early 20th century cinema archives.
+       </p>
+       <a class="text-indigo-600 font-semibold hover:underline flex items-center space-x-1" href="#">
+        <span>
+         Read More
+        </span>
+        <i class="fas fa-arrow-right">
+        </i>
+       </a>
+      </div>
+     </article>
+     <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+      <img alt="Stack of old handwritten letters tied with a red ribbon on a wooden desk" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/2676d135-ee07-490a-3072-8e1a8af3e612.jpg" width="600"/>
+      <div class="p-6">
+       <h3 class="text-xl font-semibold mb-2 text-indigo-700 hover:underline cursor-pointer">
+        Collection of Historical Letters
+       </h3>
+       <p class="text-gray-600 mb-4">
+        Handwritten letters from notable historical figures, preserved digitally.
+       </p>
+       <a class="text-indigo-600 font-semibold hover:underline flex items-center space-x-1" href="#">
+        <span>
+         Read More
+        </span>
+        <i class="fas fa-arrow-right">
+        </i>
+       </a>
+      </div>
+     </article>
+    </div>
+   </section>
+   <section>
+    <h2 class="text-3xl font-semibold text-gray-800 mb-8 border-b-2 border-indigo-600 inline-block pb-2">
+     Archive Categories
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+     <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition-shadow duration-300">
+      <img alt="Icon representing documents archive, stack of papers with text" class="mb-4 w-24 h-24 object-contain" height="120" src="https://storage.googleapis.com/a1aa/image/289a9657-5979-4093-e01f-bc2f47dd436c.jpg" width="120"/>
+      <h3 class="text-xl font-semibold mb-2 text-indigo-700">
+       Documents
+      </h3>
+      <p class="text-gray-600">
+       Official papers, manuscripts, and written records from various eras.
+      </p>
+     </div>
+     <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition-shadow duration-300">
+      <img alt="Icon representing photo archive, vintage camera with film roll" class="mb-4 w-24 h-24 object-contain" height="120" src="https://storage.googleapis.com/a1aa/image/b1f8c824-4f4f-4939-f0e2-76632051f5e2.jpg" width="120"/>
+      <h3 class="text-xl font-semibold mb-2 text-indigo-700">
+       Photos
+      </h3>
+      <p class="text-gray-600">
+       Historical photographs capturing moments, people, and places.
+      </p>
+     </div>
+     <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition-shadow duration-300">
+      <img alt="Icon representing maps archive, old folded map with compass" class="mb-4 w-24 h-24 object-contain" height="120" src="https://storage.googleapis.com/a1aa/image/48283fd3-9b3b-4589-521c-77982bbe5367.jpg" width="120"/>
+      <h3 class="text-xl font-semibold mb-2 text-indigo-700">
+       Maps
+      </h3>
+      <p class="text-gray-600">
+       Geographical maps and charts from different historical periods.
+      </p>
+     </div>
+     <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition-shadow duration-300">
+      <img alt="Icon representing video archive, vintage film camera with reels" class="mb-4 w-24 h-24 object-contain" height="120" src="https://storage.googleapis.com/a1aa/image/25f5dcaf-43b8-4f13-89de-bac0615fe536.jpg" width="120"/>
+      <h3 class="text-xl font-semibold mb-2 text-indigo-700">
+       Videos
+      </h3>
+      <p class="text-gray-600">
+       Digitized historical videos and film reels from archives worldwide.
+      </p>
+     </div>
+     <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition-shadow duration-300">
+      <img alt="Icon representing letters archive, envelope with wax seal" class="mb-4 w-24 h-24 object-contain" height="120" src="https://storage.googleapis.com/a1aa/image/cc65c81a-d7f4-4d31-cad6-6a917ae46e8b.jpg" width="120"/>
+      <h3 class="text-xl font-semibold mb-2 text-indigo-700">
+       Letters
+      </h3>
+      <p class="text-gray-600">
+       Personal and official correspondence preserved for historical research.
+      </p>
+     </div>
+     <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition-shadow duration-300">
+      <img alt="Icon representing artifacts archive, ancient pottery and tools" class="mb-4 w-24 h-24 object-contain" height="120" src="https://storage.googleapis.com/a1aa/image/6ff905b0-3a61-42e0-8dd1-03cac548ad25.jpg" width="120"/>
+      <h3 class="text-xl font-semibold mb-2 text-indigo-700">
+       Artifacts
+      </h3>
+      <p class="text-gray-600">
+       Physical historical objects and relics documented and digitized.
+      </p>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="bg-white border-t border-gray-200 mt-16">
+   <div class="container mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center text-gray-600 text-sm">
+    <p>
+     © 2024 Modern Archive. All rights reserved.
+    </p>
+    <div class="flex space-x-6 mt-4 md:mt-0">
+     <a aria-label="Facebook" class="hover:text-indigo-600 transition" href="#">
+      <i class="fab fa-facebook fa-lg">
+      </i>
+     </a>
+     <a aria-label="Twitter" class="hover:text-indigo-600 transition" href="#">
+      <i class="fab fa-twitter fa-lg">
+      </i>
+     </a>
+     <a aria-label="Instagram" class="hover:text-indigo-600 transition" href="#">
+      <i class="fab fa-instagram fa-lg">
+      </i>
+     </a>
+     <a aria-label="LinkedIn" class="hover:text-indigo-600 transition" href="#">
+      <i class="fab fa-linkedin fa-lg">
+      </i>
+     </a>
+    </div>
+   </div>
+  </footer>
+  <script>
+   const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+ </body>
+</html>
